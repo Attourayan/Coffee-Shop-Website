@@ -88,5 +88,23 @@ section {
 /* box search */
 
 .box-search{
-    background: red;
+     
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 50%;
+     transform: translate(-50%); 
+}
+.box-search input{
+    width: 100%;
+    border: none;  
+    outline: none;
+    padding: 20px;
+    font-size: 1rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.box-search input::placeholder{
+    font-size: 1rem;
+    font-weight: 600;
 }
