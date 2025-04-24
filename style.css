@@ -175,10 +175,9 @@ header .right-menu i:hover {
   width: 100%;
   gap: 1rem;
   justify-content: center;
- 
 }
 .about .about-image {
-  margin: 0 1rem; background: red;
+  margin: 0 1rem;
   align-items: center;
   display: flex;
 }
@@ -207,6 +206,7 @@ header .right-menu i:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+ 
 }
 
 .product .list-product-box {
@@ -368,8 +368,7 @@ header .right-menu i:hover {
   text-align: center;
   font-size: 2.5rem;
 }
-.footer-box {
-}
+
 .subscribe {
   display: flex;
   justify-content: center;
@@ -490,7 +489,6 @@ header .right-menu i:hover {
 @media screen and (max-width: 650px) {
   header {
     padding: 12px 4%;
-   
   }
   header .nav-menu {
     /* display: none;*/
@@ -552,15 +550,64 @@ header .right-menu i:hover {
   }
   .home .home-text p {
     text-align: center;
+    padding: 1rem;
   }
 
-  .home .home-image {
-    text-align: center;
-    padding: 0;
-    object-fit: cover;
-    margin: 0;
+  /* about */
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
   }
+  .about .about-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-image {
+    width: 100%;
+    margin: 0rem;
+  }
+  /* product */
+  .product h1 {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .product .list-product-box {
+    display: flex;
+    flex-direction: column;
+  
+    width: 100%;
+    
+  }
+/* footer */
+.footer {
+  background: url("img/footer-4.jpg");
+  background-position: center;
+  background-size: cover;
+  color: var(--bg-color);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.subscribe {
  
+  width: 100%;
+  
+}
+
+
+
 
 
 
