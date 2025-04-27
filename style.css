@@ -39,7 +39,7 @@ h1 {
 /* menu navigation  */
 
 header {
-  background: var(--text-color);
+  background: transparent;
   position: fixed;
   top: 0;
   right: 0;
@@ -50,7 +50,10 @@ header {
   align-items: center;
   padding: 0px 10%;
 }
-
+header.active{
+  background: var(--text-color);
+  box-shadow: var(--box-shadow-2);
+}
 header .logo {
   width: 80px;
   height: 80px;
@@ -206,7 +209,6 @@ header .right-menu i:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
- 
 }
 
 .product .list-product-box {
@@ -483,6 +485,37 @@ header .right-menu i:hover {
   color: var(--text-color);
 }
 
+/* copyright */
+
+.copyright{
+  background-color: #1b1b1b;
+  color: var(--bg-color);
+  text-align: center;
+  padding: 20px 10%;
+  font-size: .8rem;
+}
+.copyright  span{
+  color: var(--main-color);
+  font-weight: 600;
+  text-shadow: var(--box-shadow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive screen */
 
 @media screen and (max-width: 650px) {
@@ -578,37 +611,27 @@ header .right-menu i:hover {
   .product .list-product-box {
     display: flex;
     flex-direction: column;
-  
+
     width: 100%;
-    
   }
-/* footer */
-.footer {
-  background: url("img/footer-4.jpg");
-  background-position: center;
-  background-size: cover;
-  color: var(--bg-color);
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 2.5rem;
-}
-.subscribe {
- 
-  width: 100%;
-  
-}
-
-
-
-
-
-
-
+  /* footer */
+  .footer {
+    background: url("img/footer-4.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--bg-color);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .subscribe {
+    width: 100%;
+  }
 }
