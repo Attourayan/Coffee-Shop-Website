@@ -14,6 +14,7 @@
       media="screen and max-width=900px"
       href="tablet.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/2e566aa46d.js"
       crossorigin="anonymous"
@@ -69,7 +70,7 @@
 
     <!-- About -->
 
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-up">
       <div class="about-image">
         <img src="img/about.jpg" alt="about image" />
       </div>
@@ -96,7 +97,7 @@
 
     <!-- product -->
 
-    <section class="product" id="products">
+    <section class="product" id="products" data-aos="fade-up">
       <h1>our popular products</h1>
 
       <div class="list-product-box">
@@ -196,7 +197,7 @@
 
     <!-- customers -->
 
-    <section class="customers" id="customers">
+    <section class="customers" id="customers" data-aos="fade-up">
       <div class="customer-header">
         <h1>whate ouer customers say</h1>
       </div>
@@ -389,7 +390,12 @@
         <p> &#169; <span>Attouviche.div </span>  All right reserver 2025 </p>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ 
+        offset: 200,
+    duration: 1000,  });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
